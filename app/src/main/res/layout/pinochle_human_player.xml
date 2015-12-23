@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutPinochleHumanPlayer">
+
+    <LinearLayout
+        android:id="@+id/layoutPlayerCards"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/scrollViewLog"
+        android:layout_toEndOf="@+id/scrollViewLog"
+        android:gravity="center">
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutVariableScreen"
+        android:layout_toRightOf="@+id/scrollViewLog"
+        android:layout_toEndOf="@+id/scrollViewLog"
+        android:layout_above="@+id/layoutPlayerCards">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewLog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="8dp"
+            android:id="@+id/textViewLog" />
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotalScore0"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/scrollViewLog"
+        android:textSize="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotalScore1"
+        android:layout_below="@id/textViewTotalScore0"
+        android:layout_toRightOf="@id/scrollViewLog"
+        android:textSize="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCurrentScore0"
+        android:layout_below="@id/textViewTotalScore1"
+        android:layout_toRightOf="@id/scrollViewLog"
+        android:textSize="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCurrentScore1"
+        android:layout_below="@id/textViewCurrentScore0"
+        android:layout_toRightOf="@id/scrollViewLog"
+        android:textSize="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBidAmount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewCurrentPlayer"
+        android:layout_above="@id/layoutPlayerCards"
+        android:layout_toRightOf="@id/scrollViewLog" />
+</RelativeLayout>
